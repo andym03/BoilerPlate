@@ -23,3 +23,19 @@ dist-ssr
 *.sln
 *.sw?
 
+# Storybook cache
+.storybook-cache/
+.cache/
+
+
+# Storybook build output
+storybook-static/
+
+# Storybook log files
+*.log
+build-storybook.log
+automigrate-storybook.log
+doctor-storybook.log
+
+# Dependency directory
+node_modules/
