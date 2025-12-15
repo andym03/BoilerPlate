@@ -1,0 +1,148 @@
+/**
+ * Design System Button Component Styles
+ * 
+ * Uses design system color variables for consistent theming.
+ */
+
+.ds-button {
+  /* Base styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ds-button:focus-visible {
+  outline: 2px solid var(--ds-color-blue-base);
+  outline-offset: 2px;
+}
+
+.ds-button:disabled,
+.ds-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Size variants */
+.ds-button--small {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  min-height: 32px;
+}
+
+.ds-button--medium {
+  padding: 8px 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 40px;
+}
+
+.ds-button--large {
+  padding: 12px 24px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-height: 48px;
+}
+
+/* Variant: Primary (Blue) */
+.ds-button--primary {
+  background-color: var(--ds-color-blue-base);
+  color: var(--ds-color-white-base);
+  border-color: var(--ds-color-blue-base);
+}
+
+.ds-button--primary:hover:not(:disabled) {
+  background-color: var(--ds-color-blue-dark);
+  border-color: var(--ds-color-blue-dark);
+}
+
+.ds-button--primary:active:not(:disabled) {
+  background-color: var(--ds-color-blue-dark);
+  border-color: var(--ds-color-blue-dark);
+  transform: translateY(1px);
+}
+
+/* Variant: Secondary (Purple) */
+.ds-button--secondary {
+  background-color: var(--ds-color-purple-base);
+  color: var(--ds-color-white-base);
+  border-color: var(--ds-color-purple-base);
+}
+
+.ds-button--secondary:hover:not(:disabled) {
+  background-color: var(--ds-color-purple-dark);
+  border-color: var(--ds-color-purple-dark);
+}
+
+.ds-button--secondary:active:not(:disabled) {
+  background-color: var(--ds-color-purple-dark);
+  border-color: var(--ds-color-purple-dark);
+  transform: translateY(1px);
+}
+
+/* Variant: Warning (Yellow) */
+.ds-button--warning {
+  background-color: var(--ds-color-yellow-base);
+  color: var(--ds-color-black-base);
+  border-color: var(--ds-color-yellow-base);
+}
+
+.ds-button--warning:hover:not(:disabled) {
+  background-color: var(--ds-color-yellow-dark);
+  border-color: var(--ds-color-yellow-dark);
+}
+
+.ds-button--warning:active:not(:disabled) {
+  background-color: var(--ds-color-yellow-dark);
+  border-color: var(--ds-color-yellow-dark);
+  transform: translateY(1px);
+}
+
+/* Variant: Info (Blue - lighter variant) */
+.ds-button--info {
+  background-color: var(--ds-color-blue-light);
+  color: var(--ds-color-white-base);
+  border-color: var(--ds-color-blue-light);
+}
+
+.ds-button--info:hover:not(:disabled) {
+  background-color: var(--ds-color-blue-base);
+  border-color: var(--ds-color-blue-base);
+}
+
+.ds-button--info:active:not(:disabled) {
+  background-color: var(--ds-color-blue-base);
+  border-color: var(--ds-color-blue-base);
+  transform: translateY(1px);
+}
+
+/* Variant: Danger (Red) */
+.ds-button--danger {
+  background-color: var(--ds-color-red-base);
+  color: var(--ds-color-white-base);
+  border-color: var(--ds-color-red-base);
+}
+
+.ds-button--danger:hover:not(:disabled) {
+  background-color: var(--ds-color-red-dark);
+  border-color: var(--ds-color-red-dark);
+}
+
+.ds-button--danger:active:not(:disabled) {
+  background-color: var(--ds-color-red-dark);
+  border-color: var(--ds-color-red-dark);
+  transform: translateY(1px);
+}

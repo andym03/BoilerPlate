@@ -1,0 +1,103 @@
+/**
+ * Design System Color Palette CSS Variables
+ * 
+ * Maps TypeScript color tokens to CSS custom properties.
+ * Supports light and dark mode via media queries.
+ */
+
+:root {
+  /* White */
+  --ds-color-white-base: #ffffff;
+  --ds-color-white-light: #ffffff;
+  --ds-color-white-dark: #f5f5f5;
+
+  /* Black */
+  --ds-color-black-base: #000000;
+  --ds-color-black-light: #1a1a1a;
+  --ds-color-black-dark: #000000;
+
+  /* Green */
+  --ds-color-green-base: #22c55e;
+  --ds-color-green-light: #4ade80;
+  --ds-color-green-dark: #16a34a;
+
+  /* Blue */
+  --ds-color-blue-base: #3b82f6;
+  --ds-color-blue-light: #60a5fa;
+  --ds-color-blue-dark: #2563eb;
+
+  /* Purple */
+  --ds-color-purple-base: #a855f7;
+  --ds-color-purple-light: #c084fc;
+  --ds-color-purple-dark: #9333ea;
+
+  /* Yellow */
+  --ds-color-yellow-base: #eab308;
+  --ds-color-yellow-light: #facc15;
+  --ds-color-yellow-dark: #ca8a04;
+
+  /* Orange */
+  --ds-color-orange-base: #f97316;
+  --ds-color-orange-light: #fb923c;
+  --ds-color-orange-dark: #ea580c;
+
+  /* Gray */
+  --ds-color-gray-base: #6b7280;
+  --ds-color-gray-light: #9ca3af;
+  --ds-color-gray-dark: #4b5563;
+
+  /* Red */
+  --ds-color-red-base: #ef4444;
+  --ds-color-red-light: #f87171;
+  --ds-color-red-dark: #dc2626;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* White - darker in dark mode */
+    --ds-color-white-base: #f5f5f5;
+    --ds-color-white-light: #ffffff;
+    --ds-color-white-dark: #e5e5e5;
+
+    /* Black - lighter in dark mode */
+    --ds-color-black-base: #1a1a1a;
+    --ds-color-black-light: #2a2a2a;
+    --ds-color-black-dark: #000000;
+
+    /* Green - adjusted for dark mode */
+    --ds-color-green-base: #4ade80;
+    --ds-color-green-light: #86efac;
+    --ds-color-green-dark: #22c55e;
+
+    /* Blue - adjusted for dark mode */
+    --ds-color-blue-base: #60a5fa;
+    --ds-color-blue-light: #93c5fd;
+    --ds-color-blue-dark: #3b82f6;
+
+    /* Purple - adjusted for dark mode */
+    --ds-color-purple-base: #c084fc;
+    --ds-color-purple-light: #d8b4fe;
+    --ds-color-purple-dark: #a855f7;
+
+    /* Yellow - adjusted for dark mode */
+    --ds-color-yellow-base: #facc15;
+    --ds-color-yellow-light: #fde047;
+    --ds-color-yellow-dark: #eab308;
+
+    /* Orange - adjusted for dark mode */
+    --ds-color-orange-base: #fb923c;
+    --ds-color-orange-light: #fdba74;
+    --ds-color-orange-dark: #f97316;
+
+    /* Gray - adjusted for dark mode */
+    --ds-color-gray-base: #9ca3af;
+    --ds-color-gray-light: #d1d5db;
+    --ds-color-gray-dark: #6b7280;
+
+    /* Red - adjusted for dark mode */
+    --ds-color-red-base: #f87171;
+    --ds-color-red-light: #fca5a5;
+    --ds-color-red-dark: #ef4444;
+  }
+}
