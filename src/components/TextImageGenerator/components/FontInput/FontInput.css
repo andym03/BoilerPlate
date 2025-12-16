@@ -1,0 +1,79 @@
+.font-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.font-input__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.font-input__input {
+  flex: 1;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid var(--ds-color-gray-base, #ccc);
+  border-radius: 6px;
+  background-color: var(--ds-color-white-base, #fff);
+  color: var(--ds-color-black-base, #000);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.font-input__input:focus {
+  outline: none;
+  border-color: var(--ds-color-blue-base, #007bff);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.font-input__input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: var(--ds-color-gray-light, #f5f5f5);
+}
+
+.font-input__input::placeholder {
+  color: var(--ds-color-gray-base, #999);
+}
+
+.font-input__status {
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.font-input__status--idle {
+  display: none;
+}
+
+.font-input__status--loading {
+  color: var(--ds-color-blue-base, #007bff);
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.font-input__status--loaded {
+  color: var(--ds-color-green-base, #28a745);
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.font-input__status--error {
+  color: var(--ds-color-red-base, #dc3545);
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.font-input__error {
+  font-size: 0.875rem;
+  color: var(--ds-color-red-base, #dc3545);
+  padding: 8px 12px;
+  background-color: rgba(220, 53, 69, 0.1);
+  border-radius: 4px;
+  border-left: 3px solid var(--ds-color-red-base, #dc3545);
+}
+

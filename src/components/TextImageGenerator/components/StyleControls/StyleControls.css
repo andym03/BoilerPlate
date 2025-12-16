@@ -1,0 +1,69 @@
+.style-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.style-controls__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.style-controls__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ds-color-black-base, #000);
+}
+
+.style-controls__input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.style-controls__input {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid var(--ds-color-gray-base, #ccc);
+  border-radius: 6px;
+  background-color: var(--ds-color-white-base, #fff);
+  color: var(--ds-color-black-base, #000);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.style-controls__input:focus {
+  outline: none;
+  border-color: var(--ds-color-blue-base, #007bff);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.style-controls__input--number {
+  width: 100px;
+  padding: 8px 12px;
+  text-align: right;
+}
+
+.style-controls__input--color {
+  width: 60px;
+  height: 40px;
+  padding: 2px;
+  cursor: pointer;
+  border: 1px solid var(--ds-color-gray-base, #ccc);
+}
+
+.style-controls__input--text {
+  flex: 1;
+  padding: 8px 12px;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.style-controls__unit {
+  font-size: 0.875rem;
+  color: var(--ds-color-gray-dark, #666);
+  white-space: nowrap;
+}
+
