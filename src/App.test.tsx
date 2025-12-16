@@ -3,20 +3,26 @@ import userEvent from '@testing-library/user-event'
 import App from './App'
 
 describe('App', () => {
-  it('renders the app title', () => {
+  it('renders toolbar', () => {
     render(<App />)
-    const titleElement = screen.getByText(/React \+ Vite \+ TypeScript/i)
-    expect(titleElement).toBeInTheDocument()
+    const toolbar = screen.getByRole('toolbar', { name: /drawing tools/i })
+    expect(toolbar).toBeInTheDocument()
   })
 
-  it('increments count when button is clicked', async () => {
+  it('renders canvas', () => {
+    render(<App />)
+    const canvas = screen.getByTestId('canvas')
+    expect(canvas).toBeInTheDocument()
+  })
+
+  it('allows selecting tools from toolbar', async () => {
     const user = userEvent.setup()
     render(<App />)
     
-    const button = screen.getByRole('button', { name: /count is 0/i })
-    expect(button).toBeInTheDocument()
+    const rectangleButton = screen.getByRole('button', { name: /rectangle/i })
+    expect(rectangleButton).toBeInTheDocument()
     
-    await user.click(button)
-    expect(screen.getByRole('button', { name: /count is 1/i })).toBeInTheDocument()
+    await user.click(rectangleButton)
+    expect(rectangleButton).toHaveAttribute('aria-pressed', 'true')
   })
 })

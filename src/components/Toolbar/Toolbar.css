@@ -1,0 +1,17 @@
+.toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.toolbar-separator {
+  width: 1px;
+  background-color: #e5e5e5;
+  margin: 0 4px;
+  align-self: stretch;
+}
+

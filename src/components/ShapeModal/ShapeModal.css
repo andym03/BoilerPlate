@@ -1,0 +1,137 @@
+.shape-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.shape-modal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.shape-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.shape-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.shape-modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.shape-modal-close:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.shape-modal-form {
+  padding: 1.5rem;
+}
+
+.shape-modal-field {
+  margin-bottom: 1.5rem;
+}
+
+.shape-modal-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.shape-modal-field input[type="number"],
+.shape-modal-field input[type="color"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.shape-modal-field input[type="number"]:focus,
+.shape-modal-field input[type="color"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.shape-modal-field input[type="color"] {
+  height: 3rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.shape-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.shape-modal-cancel,
+.shape-modal-apply {
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  border: none;
+}
+
+.shape-modal-cancel {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.shape-modal-cancel:hover {
+  background-color: #e5e7eb;
+}
+
+.shape-modal-apply {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.shape-modal-apply:hover {
+  background-color: #2563eb;
+}
+

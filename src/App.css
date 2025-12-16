@@ -1,59 +1,14 @@
 .App {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.App-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
-
-.card {
-  padding: 2em;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--ds-color-black-light);
-  color: var(--ds-color-white-base);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: var(--ds-color-blue-base);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.read-the-docs {
-  color: var(--ds-color-gray-base);
-  margin-top: 2rem;
-}
-
-code {
-  background-color: var(--ds-color-black-light);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+.App__main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
 }
 

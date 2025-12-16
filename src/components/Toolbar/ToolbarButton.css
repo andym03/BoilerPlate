@@ -1,0 +1,47 @@
+.toolbar-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 12px;
+  min-width: 80px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 12px;
+  color: #333333;
+}
+
+.toolbar-button:hover {
+  background-color: #f5f5f5;
+  border-color: #3b82f6;
+}
+
+.toolbar-button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.toolbar-button--active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.toolbar-button--active:hover {
+  background-color: #2563eb;
+}
+
+.toolbar-button__icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.toolbar-button__label {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
