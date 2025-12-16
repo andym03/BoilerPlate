@@ -4,7 +4,7 @@ import {
   isTextImageError,
   handleError,
 } from './errorHandler'
-import { ErrorType, TextImageError } from '../types/textImage'
+import { ErrorType, TextImageError } from '@/types/textImage'
 
 /**
  * Interface for error handling utilities

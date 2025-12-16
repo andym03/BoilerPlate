@@ -1,5 +1,5 @@
 import { loadFont, getCachedFont, clearFontCache } from './fontLoader'
-import { FontLoadResult } from '../types/textImage'
+import { FontLoadResult } from '@/types/textImage'
 
 /**
  * Interface for font loading utilities

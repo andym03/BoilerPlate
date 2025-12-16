@@ -1,5 +1,5 @@
 import { renderTextToSvg, svgToDataUrl, svgToBlob } from './textImageRenderer'
-import { TextImageOptions, RenderResult } from '../types/textImage'
+import { TextImageOptions, RenderResult } from '@/types/textImage'
 
 /**
  * Interface for text image rendering utilities

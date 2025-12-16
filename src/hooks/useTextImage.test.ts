@@ -1,6 +1,6 @@
 import { renderHook, waitFor } from '@testing-library/react'
 import { useTextImage } from './useTextImage'
-import { TextImageOptions } from '../types/textImage'
+import { TextImageOptions } from '@/types/textImage'
 
 /**
  * Interface for useTextImage hook return value

@@ -2,10 +2,10 @@
  * Font loading utilities with caching support
  */
 
-import { FontLoadResult } from '../types/textImage'
+import { FontLoadResult } from '@/types/textImage'
 import { validateFontUrl } from './urlValidator'
 import { createError, handleError } from './errorHandler'
-import { ErrorType } from '../types/textImage'
+import { ErrorType } from '@/types/textImage'
 
 // Font cache: maps font family name to FontFace instance
 const fontCache = new Map<string, FontFace>()

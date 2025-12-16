@@ -2,7 +2,7 @@
  * Error handling utilities for text image operations
  */
 
-import { ErrorType, TextImageError } from '../types/textImage'
+import { ErrorType, TextImageError } from '@/types/textImage'
 
 /**
  * Creates a standardized TextImageError object

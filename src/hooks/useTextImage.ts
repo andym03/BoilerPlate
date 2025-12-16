@@ -3,11 +3,11 @@
  */
 
 import { useState, useCallback } from 'react'
-import { TextImageOptions, RenderResult } from '../types/textImage'
-import { renderTextToSvg } from '../utils/textImageRenderer'
-import { loadFont } from '../utils/fontLoader'
-import { handleError } from '../utils/errorHandler'
-import { ErrorType } from '../types/textImage'
+import { TextImageOptions, RenderResult } from '@/types/textImage'
+import { renderTextToSvg } from '@utils/textImageRenderer'
+import { loadFont } from '@utils/fontLoader'
+import { handleError } from '@utils/errorHandler'
+import { ErrorType } from '@/types/textImage'
 
 export interface UseTextImageReturn {
   /** Rendered image data */

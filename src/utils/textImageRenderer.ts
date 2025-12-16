@@ -2,7 +2,7 @@
  * Text to SVG image rendering utilities
  */
 
-import { TextImageOptions, RenderResult } from '../types/textImage'
+import { TextImageOptions, RenderResult } from '@/types/textImage'
 
 /**
  * Default padding around text (in pixels)
