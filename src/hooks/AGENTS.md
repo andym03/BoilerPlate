@@ -1,0 +1,2 @@
+- Optimize for Composition, Not Configuration
+- Ensure stable references, only use primitive values for dependency arrays

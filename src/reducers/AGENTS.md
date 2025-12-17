@@ -1,0 +1,4 @@
+- Ensure this directory has pure reducers that are easy to test
+- Ensure reducers are well typed
+- Never mutate state, return new object references when required
+- Whenever we use `useReducer`, ensure we have an initializer function for the third argument
